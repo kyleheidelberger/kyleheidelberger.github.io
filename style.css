@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat|Roboto|Source+Sans+Pro|Work+Sans&display=swap');
+/* 
+font-family: 'Work Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif; 
+*/
+
 *	{
     box-sizing: border-box;
     margin: 0;
@@ -7,14 +16,20 @@
 }
 
 /* element selectors */
+html, body  {
+    height: 100%;
+}
 
 body    {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 main    {
     padding: 10px 20px;
+    flex: 1 0 auto;
 }
 
 img {
@@ -24,14 +39,19 @@ img {
 /* on all pages */
 
 .page-header    {
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background: linear-gradient(to bottom, rgba(31, 164, 201, 0.692), rgb(31, 164, 201));
     padding: 14px 40px;
     width: 100%;
+    /* border-bottom: 3px solid black; */
 }
 
 .heading  {
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     margin: 5px;
+    text-shadow: 2px 2px white;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .nav-bar {
@@ -39,12 +59,14 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 5px;
 }
 
 .barLink    {
     padding: 5px 15px;
     background-color: black;
     border-radius: 2em;
+    box-shadow: 4px 4px rgba(58, 55, 55, 0.795);
 }
 
 .pageTitle  {
@@ -63,7 +85,9 @@ main a   {
 }
 
 .footer {
-    margin: 20px;
+    padding: 5px 20px;
+    background-color: rgba(31, 164, 201, 0.781);
+    flex-shrink: 0;
 }
 
 .email, .twitter, .linkedIn, .facebook, .instagram  {
@@ -80,8 +104,9 @@ main a   {
 .kyle   {
     width: 75%;
     max-width: 400px;
-    border: 8px solid black;
+    border: 8px solid rgb(12, 62, 75);
     border-radius: 40px;
+    /* box-shadow: 4px 4px rgba(56, 52, 53, 0.836); */
 }
 
 .name   {
@@ -109,6 +134,9 @@ main a   {
 }
 
 /* Resume */
+.resume {
+    margin-bottom: 20px;
+}
 
 .resume h3 {
     font-size: 2rem;
