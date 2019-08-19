@@ -1,3 +1,5 @@
+/* Designed for Mobile First */
+
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat|Roboto|Source+Sans+Pro|Work+Sans&display=swap');
 /* 
 font-family: 'Work Sans', sans-serif;
@@ -7,13 +9,6 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'IBM Plex Sans', sans-serif; 
 */
 
-*	{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* border: 1px solid black; */
-    
-}
 
 /* element selectors */
 html, body  {
@@ -29,7 +24,6 @@ body    {
 
 main    {
     padding: 10px 20px;
-    flex: 1 0 auto;
 }
 
 img {
@@ -39,7 +33,7 @@ img {
 /* on all pages */
 
 .page-header    {
-    background: linear-gradient(to bottom, rgba(31, 164, 201, 0.692), rgb(31, 164, 201));
+    /* background: linear-gradient(to bottom, rgba(31, 164, 201, 0.692), rgb(31, 164, 201)); */
     padding: 14px 40px;
     width: 100%;
     /* border-bottom: 3px solid black; */
@@ -47,7 +41,7 @@ img {
 
 .heading  {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 1.3em;
     margin: 5px;
     text-shadow: 2px 2px white;
     letter-spacing: 2px;
@@ -334,6 +328,9 @@ hr::after   {
     
     .bio    {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 0 auto;
     }
     
     .textRight  {
