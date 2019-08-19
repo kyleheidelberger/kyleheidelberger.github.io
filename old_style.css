@@ -1,0 +1,396 @@
+/* Designed for Mobile First */
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Montserrat|Roboto|Source+Sans+Pro|Work+Sans&display=swap');
+/* 
+font-family: 'Work Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif; 
+*/
+
+
+/* element selectors */
+html, body  {
+    height: 100%;
+}
+
+body    {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main    {
+    padding: 10px 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* on all pages */
+
+.page-header    {
+    /* background: linear-gradient(to bottom, rgba(31, 164, 201, 0.692), rgb(31, 164, 201)); */
+    padding: 14px 40px;
+    width: 100%;
+    /* border-bottom: 3px solid black; */
+}
+
+.heading  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    margin: 5px;
+    text-shadow: 2px 2px white;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.nav-bar {
+    font-size: .75em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+}
+
+.barLink    {
+    padding: 5px 15px;
+    background-color: black;
+    border-radius: 2em;
+    box-shadow: 4px 4px rgba(58, 55, 55, 0.795);
+}
+
+.pageTitle  {
+    font-size: 3rem;
+    display: block;
+}
+
+a.barLink  {
+    color: white;
+    text-decoration: none;
+}
+
+main a   {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    padding: 5px 20px;
+    background-color: rgba(31, 164, 201, 0.781);
+    flex-shrink: 0;
+}
+
+.email, .twitter, .linkedIn, .facebook, .instagram  {
+    height: 30px;
+    margin: 10px;
+}
+
+.copyright  {
+    text-align: center;
+}
+
+/* Home page */
+
+.kyle   {
+    width: 75%;
+    max-width: 400px;
+    border: 8px solid rgb(12, 62, 75);
+    border-radius: 40px;
+    /* box-shadow: 4px 4px rgba(56, 52, 53, 0.836); */
+}
+
+.name   {
+    padding: 2px 0px;
+    font-variant-caps: small-caps;
+}
+
+.textRight  {
+    margin-top: 10px;
+}
+
+/* Project page */
+
+.projDesc   {
+    margin: 10px;
+    width: 75%;
+    max-width: 90%;
+}
+
+.projImg    {
+    width: 75%;
+    margin: 10px;
+    border: 4px solid black;
+    max-width: 90%;
+}
+
+/* Resume */
+.resume {
+    margin-bottom: 20px;
+}
+
+.resume h3 {
+    font-size: 2rem;
+}
+
+.contact    {
+    font-size: 1rem;
+}
+
+.dates  {
+    font-size:  1rem;
+}
+
+hr  {
+    border: none;
+    border-top: 5px double black;
+    color: black;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr::after   {
+    background: #ffffff;
+    content: "H";
+    font-size: 30px;
+    padding: 0 4px;
+    position: relative;
+    top: -25px;
+}
+
+.statement  {
+    font-size: 1rem;
+}
+
+.resumeSection  {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant-caps: small-caps;
+}
+
+.company, .university    {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.job-title {
+    font-size: 1rem;
+    font-variant-caps: small-caps;
+}
+
+.job-description, .degree   {
+    font-size:  1.1rem;
+}
+
+.resume *    {
+    padding: 5px 0px;
+}
+
+/*    Media Queries   */
+
+/* Tablet Display */
+
+@media screen and (min-width:768px)    {
+    
+    main    {
+        margin: 15px 25px;
+    }
+    
+    /* on all pages */
+    
+    .heading  {
+        font-size: 3.6rem;
+        margin: 10px;
+    }
+    
+    .nav-bar {
+        font-size: 2rem;
+    }
+    
+    .barLink    {
+        padding: 8px 20px;
+    }
+    
+    .pageTitle  {
+        font-size: 4rem;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .email, .twitter, .linkedIn, .facebook, .instagram  {
+        height: 50px;
+    }
+    
+    .copyright  {
+        font-size: 1.5em;
+    }
+    
+    /* Home page */
+    
+    .textRight  {
+        font-size: 2em;
+    }
+    
+    /* Project page */
+    
+    .projDesc   {
+        font-size: 2em;
+    }
+    
+    .projImg    {
+        margin: 20px 10px;
+    }
+    
+    /* Resume */
+    
+    .resume h3 {
+        font-size: 4em;
+    }
+    
+    .contact    {
+        font-size: 2em;
+    }
+    
+    .dates  {
+        font-size:  2em;
+    }
+    
+    .statement  {
+        font-size: 2em;
+    }
+    
+    .resumeSection  {
+        font-size: 3em;
+    }
+    
+    .company, .university    {
+        font-size: 2.5em;
+    }
+    
+    .job-title   {
+        font-size: 2.1em;
+    }
+    
+    .job-description, .degree   {
+        font-size:  2em;
+    }
+    
+}
+
+/* Large Display */
+
+@media screen and (min-width:1130px)    {
+    
+    main    {
+        margin: 15px 50px;
+    }
+    
+    .page-header    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .heading  {
+        font-size: 4em;
+        margin: .5em;
+    }
+    
+    .nav-bar {
+        font-size: 2.6em;
+    }
+    
+    .barLink    {
+        padding: 15px 25px 15px 25px;
+        background-color: black;
+        margin: 0px 20px 0px 20px;
+        border-radius: 2em;
+    }
+    
+    .pageTitle  {
+        font-size: 45px;
+        display: block;
+    }
+    
+    /* Index / Bio */
+    
+    .headshot   {
+        flex: 0 1 30%;
+    }
+    
+    .bio    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 0 auto;
+    }
+    
+    .textRight  {
+        flex: 0 1 70%;
+    }
+    
+    /* Project Page */
+    
+    .proj   {
+        display: flex;
+        margin: 10px 0px;
+    }
+    
+    .projDesc   {
+        width: 60%;
+    }
+    
+    .project-Img    {
+        width: 40%;
+    }
+    
+    /* Resume */
+    
+    .resumeBox  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .resume h3 {
+        font-size: 4rem;
+    }
+    
+    .contact, .dates    {
+        font-size: 1.3rem;
+        text-align: right;
+    }
+    
+    .statement  {
+        font-size: 1.5rem;
+    }
+    
+    .resumeSection  {
+        font-size: 2rem;
+    }
+    
+    .company, .university    {
+        font-size: 1.7rem;
+    }
+    
+    .job-title  {
+        font-size: 1.6rem;
+    }
+    
+    .job-description, .degree   {
+        font-size:  1.5rem;
+    }
+    
+    .resume *    {
+        padding: 5px 0px;
+    }
+    
+}
