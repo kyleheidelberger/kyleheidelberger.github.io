@@ -3,7 +3,17 @@ body {
     height: 100%;
 }
 
+.page-title {
+    text-align: center;
+}
+
+.media-body a {
+    color: white;
+    /* text-decoration: underline; */
+}
+
 .social-icon {
+    height: 50px;
     filter: invert(100%);
     -webkit-filter: invert(100%);
 }
@@ -15,7 +25,7 @@ body {
 
 .social-media{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .screenshot {
@@ -23,7 +33,6 @@ body {
     border-radius: 10px;
 }
 
-.social-icon {
-    height: 50px;
+.logo {
+    max-width: 50px;
 }
-
