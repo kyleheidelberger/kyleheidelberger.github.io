@@ -46,10 +46,14 @@
                         src="images/decidor_logo_no_text100.png" alt="decidOR logo"></a>
 
                 <div class="media-body ml-3">
-                    <h3 class="project-name">decidOR</h3>
-                    <p class="project-decription">An app to help people make decisions.</p>
-                    <a href="https://decidor.herokuapp.com" target="_blank">Link to WebApp</a> --
-                    <a href="https://github.com/kyleheidelberger/decidor" target="_blank">Code on GitHub</a>
+                    <h3 class="project-name"><img class="text-logo" src="images/decidOR-white.png" alt="decidOR" /></h3>
+                    <h4 class="about-the-app">About the App</h4>
+                    <p class="project-decription">decidOR provides a guided experience that enables users to easily make a variety of common decisions when faced with an overwhelming amount of choices. Our application simplifies this process by presenting two options at a time, in order for the user to reach an ultimate decision.</p>
+                    <h4 class="creating-the-app">Creating the App</h4>
+                    <p class="project-decription">
+                    This app was built over the course of two weeks along with three fellow developers: Benny Koval, Daniel Cope, and Sarah Anthony. The app utilizes various technologies, including Django/Python for backend, a Postgresql database, Vue.js/JavaScript for frontend and primary functionality, Sassy CSS for styling and responsive mobile design, Axios for API request, Amazon Web Services for image hosting, and more.</p>
+                    <a class="fill" href="https://decidor.herokuapp.com" target="_blank">Link to WebApp</a> --
+                    <a class="fill" href="https://github.com/kyleheidelberger/decidor" target="_blank">Code on GitHub</a>
                 </div>
 
             </div>
@@ -190,19 +194,15 @@
                         <li data-target="#habitCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#habitCarousel" data-slide-to="1"></li>
                         <li data-target="#habitCarousel" data-slide-to="2"></li>
-                        <li data-target="#habitCarousel" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/habit_landing.png" class="d-block w-100 carousel-image"
                                 alt="The landing page of the site before logging in">
                         </div>
-                        <div class="carousel-item active">
+                        <div class="carousel-item">
                             <img src="images/habit_home.png" class="d-block w-100 carousel-image"
                                 alt="The home page of a logged in user, displaying their habits">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/habit_create.png" class="d-block w-100 carousel-image" alt="The form to create a habit">
                         </div>
                         <div class="carousel-item">
                             <img src="images/habit_record.png" class="d-block w-100 carousel-image"
@@ -274,15 +274,21 @@
     </main>
 
     <footer class="footer bg-transparent">
-        <div class="container social-media">
-            <a href="mailto:kyle.heidelberger@gmail.com" target="_blank"><img class="social-icon" src="images/mail.svg"
-                    class="email"></a>
-            <a href="https://github.com/kyleheidelberger" target="_blank"><img
-                    src="images/GitHub-Mark-Light-64px.png"></a>
-            <a href="https://www.linkedin.com/in/kyle-heidelberger" target="_blank"><img class="social-icon"
-                    src="images/linkedin.svg" class="linkedIn"></a>
-        </div>
-    </footer>
+            <div class="container social-media">
+                <div class="footer-div"><a href="mailto:kyle.heidelberger@gmail.com" target="_blank"><img class="social-icon"
+                            src="images/mail.svg"></a>
+                    <p class="social-label">e-mail</p>
+                </div>
+                <div class="footer-div"><a href="https://github.com/kyleheidelberger" target="_blank"><img
+                            src="images/GitHub-Mark-Light-64px.png"></a>
+                    <p class="social-label">GitHub</p>
+                </div>
+                <div class="footer-div"><a href="https://www.linkedin.com/in/kyle-heidelberger" target="_blank"><img class="social-icon"
+                            src="images/linkedin.svg"></a>
+                    <p class="social-label">LinkedIn</p>
+                </div>
+            </div>
+        </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
