@@ -5,6 +5,12 @@ body {
     color: white;
 }
 
+.media-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .navbar-brand {
     font-size: 2em;
     letter-spacing: .1em;
@@ -83,9 +89,9 @@ body {
 
 .media-body .fill {
     min-height: 1rem;
-    /* display: flex; */
-    /* flex-direction: column;
-    text-transform: uppercase; */
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
     letter-spacing: 1.2px;
     font-size: 1rem;
     border: 1px solid #fff;
@@ -102,4 +108,10 @@ body {
     align-self: center;
     -webkit-filter: drop-shadow(6px 5px 5px #105ccc);
     filter: drop-shadow(6px 5px 5px #105ccc);
+}
+
+.project-links {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
