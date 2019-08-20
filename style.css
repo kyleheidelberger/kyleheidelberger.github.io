@@ -17,7 +17,7 @@ body {
 }
 
 .page-title {
-    text-align: center;
+    text-align: left;
 }
 
 .media-body a {
@@ -106,9 +106,13 @@ body {
     text-transform: uppercase;
     margin-right: 5%;
     align-self: center;
-    -webkit-filter: drop-shadow(6px 5px 5px #105ccc);
-    filter: drop-shadow(6px 5px 5px #105ccc);
+    -webkit-filter: drop-shadow(6px 5px 5px #2e2f32);
+    filter: drop-shadow(6px 5px 5px #2e2f32);
 }
+
+.fill:active {
+    transform: translateY(4px);
+  }
 
 .project-links {
     padding-bottom: 20px;
