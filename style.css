@@ -18,6 +18,7 @@ body {
 
 .page-title {
     text-align: left;
+    letter-spacing: .05em;
 }
 
 .media-body a {
@@ -54,7 +55,17 @@ body {
 }
 
 .text-logo {
-    height: 50px;
+    height: 80px;
+}
+
+.project-name {
+    font-size: 2.5em;
+}
+
+.line {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .footer {
