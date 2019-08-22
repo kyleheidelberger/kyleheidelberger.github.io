@@ -44,6 +44,15 @@ body {
     filter: drop-shadow(10px 10px 10px black); */
 }
 
+.name {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.bio {
+    max-width: 70%;
+}
+
 .social-media{
     display: flex;
     justify-content: space-between;
